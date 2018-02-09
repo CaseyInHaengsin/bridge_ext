@@ -1,0 +1,8 @@
+div#enhancement_banner {
+  text-align: center;
+  background-color: #B7BC72;
+}
+
+div#enhancement_banner:hover{
+  opacity: 80%;
+}
