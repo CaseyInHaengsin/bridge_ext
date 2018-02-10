@@ -1,7 +1,7 @@
 function getCompleted(status, cb, failcb, _attempts) {
   var prom = status;
   _attempts = ++_attempts || 1;
-  console.log(prom, _attempts);
+  // console.log(prom, _attempts);
   if (prom.readyState == 4) return cb(prom.responseJSON);
   if (_attempts == 60) return failcb();
   setTimeout(function() {
@@ -41,8 +41,8 @@ let displayCall = (pathName)=>{
   });
 }
 /*
-This call will be added once the interface is built to include a string to search by - Quick API
-//   displayCall('/api/admin/account_configs/current').then((data)=>{
-//     console.log(data);
-//   }).catch((err)=>{console.log(err)});
+The call below will be added once the interface is built to include a string to search by - Quick API
 */
+  // displayCall('/api/author/users').then((data)=>{
+  //   console.log(data);
+  // }).catch((err)=>{console.log(err)});
