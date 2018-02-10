@@ -12,7 +12,7 @@ let accountSettings = $.get('/api/admin/account_configs/current');
 
 chrome.runtime.onMessage.addListener(
   function(request, sender, sendResponse) {
-    console.log(request, sender, sendResponse);
+    // console.log(request, sender, sendResponse);
     switch (request.req) {
       case 'hideBAT':
         hideBat();
