@@ -20,6 +20,9 @@ chrome.runtime.onMessage.addListener(
       case 'showBAT':
         showBat();
         break;
+      case 'apiReq':
+        apiReq(request.path);
+        break;
     }
   return true; // This is needed to allow for asynchronous responses via sendResponse
 });
@@ -43,6 +46,8 @@ let displayCall = (pathName)=>{
 /*
 The call below will be added once the interface is built to include a string to search by - Quick API
 */
-  // displayCall('/api/author/users').then((data)=>{
-  //   console.log(data);
-  // }).catch((err)=>{console.log(err)});
+let apiReq = (path)=>{
+  displayCall(path).then((data)=>{
+    console.log(data);
+  }).catch((err)=>{console.log(err)});
+}

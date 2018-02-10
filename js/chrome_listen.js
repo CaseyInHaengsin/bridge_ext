@@ -21,4 +21,16 @@ $(document).ready(function(){
       });
     });
   });
+  $('#apiRequest').click(function(e){
+    e.preventDefault();
+    chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+      var dataForAPI = {
+        req: "apiReq",
+        path: $('#apiPath').val(),
+      };
+      chrome.tabs.sendMessage(tabs[0].id, dataForAPI, function(response) {
+        console.log(response);
+      });
+    });
+  });
 });
