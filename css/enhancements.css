@@ -4,11 +4,11 @@ div#enhancement_banner {
 
 }
 
-div#enhancement_banner:hover{
-  color: #9769B2;
+div#hide_enhance_div:hover{
+  background-color: #9769B2;
 }
-div#enhancement_banner:active{
-  color: #9769B2;
+div#hide_enhance_div:active{
+  box-shadow: none;
 }
 
 div#API_display {
