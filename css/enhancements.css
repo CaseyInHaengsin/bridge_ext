@@ -5,7 +5,10 @@ div#enhancement_banner {
 }
 
 div#enhancement_banner:hover{
-  opacity: 80%;
+  color: #9769B2;
+}
+div#enhancement_banner:active{
+  color: #9769B2;
 }
 
 div#API_display {
@@ -21,13 +24,20 @@ div#API_display {
 
 div#hide_enhance_div {
   margin: auto auto 10px auto;
-  background-color: #F4C391;
+  background-color: #7D4BA7;
   border: 2px ridge black;
   color: rgb(0, 0, 0);
   text-align: center;
   text-decoration: none;
+  box-shadow:
+          1px 1px 0 0 #014D06,
+          2px 2px 0 0 #014D06,
+          3px 3px 0 0 #014D06,
+          4px 4px 0 0 #014D06,
+          5px 5px 5px 0 #000000;
   display: block;
   font-size: 16px;
   cursor: pointer;
   max-width: 200px;
 }
+
