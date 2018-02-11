@@ -18,3 +18,6 @@ div#API_display {
   border: 2px solid black;
   min-width: 400px;
 }
+button#hide_enhance_div{
+  display: none;
+}
