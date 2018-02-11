@@ -48,8 +48,14 @@ The call below will be added once the interface is built to include a string to 
 */
 let apiReq = (path)=>{
   displayCall(path).then((data)=>{
-    $('#hide_enhancement_div').show();
+    $('#title').after('<div id="hide_enhance_div">Hide JSON</div>');
+    $('#hide_enhance_div').click(function(){
+      $('#hide_enhance_div').remove();
+      $('#API_display').hide();
+      $('#enhancement_banner').css('padding-bottom', '0px');
+    });
     $('#API_display').show();
     $('#API_display pre').html(JSON.stringify(data, null, '\t'));
+    $('#enhancement_banner').css('padding-bottom', '20px');
   }).catch((err)=>{console.log(err)});
 }
