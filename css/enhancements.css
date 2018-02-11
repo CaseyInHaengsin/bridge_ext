@@ -9,6 +9,7 @@ div#hide_enhance_div:hover{
 }
 div#hide_enhance_div:active{
   box-shadow: none;
+  transform: translate(4px,4px);
 }
 
 div#API_display {
@@ -26,7 +27,7 @@ div#hide_enhance_div {
   margin: auto auto 10px auto;
   background-color: #7D4BA7;
   border: 2px ridge black;
-  color: rgb(0, 0, 0);
+  color: #FFFFFF;
   text-align: center;
   text-decoration: none;
   box-shadow:
