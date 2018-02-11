@@ -27,7 +27,7 @@
   "content_scripts":[
     {
       "matches":["https://*.bridgeapp.com/*"],
-      "js":["lib/jquery.min.js", "js/test.js", "js/connect.js"],
+      "js":["lib/jquery.min.js", "js/ui_changes.js", "js/connect.js"],
       "css":["css/enhancements.css"]
     }
   ]
