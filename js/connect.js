@@ -48,6 +48,6 @@ The call below will be added once the interface is built to include a string to 
 */
 let apiReq = (path)=>{
   displayCall(path).then((data)=>{
-    console.log(data);
+      $('#enhancement_banner').append('<div id="API_display"><pre>' + JSON.stringify(data.responseJSON, null, '\t') + '</pre></div>');
   }).catch((err)=>{console.log(err)});
 }
