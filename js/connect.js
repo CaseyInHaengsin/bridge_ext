@@ -49,6 +49,6 @@ The call below will be added once the interface is built to include a string to 
 let apiReq = (path)=>{
   displayCall(path).then((data)=>{
     console.log(data);
-    $('#API_display').append('<pre>' + JSON.stringify(data, null, '\t') + '</pre>');
+    $('#API_display pre').html(JSON.stringify(data, null, '\t'));
   }).catch((err)=>{console.log(err)});
 }
